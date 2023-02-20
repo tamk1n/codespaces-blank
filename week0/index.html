@@ -9,12 +9,16 @@
                 align-items: center;
                 height: 100vh;
             }
+            .button{
+                display: flex;
+                justify-content: center;
+            }
             input[type="text"]{
                 width: 40vw;
                 height: 30px;
                 border-radius: 20px;
             }
-            input[type="submit"]{
+            input[type="submit"]{            
                 height: 35px;
                 border-radius: 5px;
             }
@@ -43,8 +47,9 @@
         </div>
         <div class="container">
             <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
+                <div class="input"><input type="text" name="q"></div>
+                <br>
+                <div class="button"><input type="submit" value="Google Search"></div>
             </form>
         </div>
     </body>
