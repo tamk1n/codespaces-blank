@@ -9,7 +9,7 @@
                 align-items: center;
                 height: 100vh;
             }
-            .button{
+            .button-group{
                 display: flex;
                 justify-content: center;
             }
@@ -20,6 +20,7 @@
             }
             input[type="submit"]{            
                 height: 35px;
+                margin: 5px;
                 border-radius: 5px;
             }
             input[type="text"]:hover{
@@ -46,11 +47,17 @@
             <a href="advanced.html">Google Advanced Search</a>
         </div>
         <div class="container">
-            <form action="https://www.google.com/search">
-                <div class="input"><input type="text" name="q"></div>
+            <form action="https://www.google.com/search" method="get">
+                <div class="input">
+                    <input type="text" name="q">
+                </div>
                 <br>
-                <div class="button"><input type="submit" value="Google Search"></div>
+                <div class="button-group">
+                    <input type="submit" name="btnG" value="Google Search">
+                    <input type="submit" name="btnI" value="I'm Feeling Lucky">
+                </div>
             </form>
+            
         </div>
     </body>
     
