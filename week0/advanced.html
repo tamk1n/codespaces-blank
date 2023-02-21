@@ -16,6 +16,16 @@
             .link > a:hover{
                 text-decoration: underline;
             }
+            .container{
+                display: grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 300px auto;
+            }
+            .flex{
+                display: flex;
+                justify-content: flex-start;
+            }
         </style>
     </head>
     <body>
@@ -23,13 +33,21 @@
             <a href="index.html">Google Search</a>
             <a href="advanced.html">Google Advanced Search</a>
         </div>
-        <div class="container">
-            <form action="https://www.google.com/search">
-                <div class="input"><input type="text" name="q"></div>
-                <br>
-                <div class="button"><input type="submit" value="Google Search"></div>
-                <input type="hidden" name="tbm" value="isch">
-            </form>
-        </div>
+        <form action="https://www.google.com/search">
+            <div class="container">
+                <div>Find pages with </div>
+                <p></p>
+                <div>all these words:</div>
+                <div><input type="text" name="as_q"></div>
+                <div>this exact word or phrase:</div>
+                <div><input type="text" name="as_epq"></div>
+                <div>any of these words:</div>
+                <div><input type="text" name="as_oq"></div>
+                <div>none of these words:</div>
+                <div><input type="text" name="as_eq"></div>
+                <div></div>
+                <div class="flex"><input type="submit" value="Advanced Search"></div>
+            </div>
+        </form>
     </body>
 </html>
